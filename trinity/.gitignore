@@ -1,0 +1,17 @@
+logs/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.idea/
+.gradle/
+build/
+local.properties
+*.iml
+.cxx/
+app/build/
+captures/
+*.apk
+*.aab
+.DS_Store

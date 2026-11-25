@@ -1,0 +1,105 @@
+[
+  {
+    "id": "P01",
+    "say": "Ей Тринити, размести заказ 166655 на адрес 15",
+    "expect": {"intent": "place_order", "order_id": "166655", "cell": "15", "missing": []}
+  },
+  {
+    "id": "P02",
+    "say": "Ей Тринити, закинь 656554 на адрес 9",
+    "expect": {"intent": "place_order", "order_id": "656554", "cell": "9", "missing": []}
+  },
+  {
+    "id": "P03",
+    "say": "Ей Тринити, кинь на адрес 48 заказ 163284",
+    "expect": {"intent": "place_order", "order_id": "163284", "cell": "48", "missing": []}
+  },
+  {
+    "id": "P04",
+    "say": "Ей Тринити, положи заказ 150011 в ячейку 50",
+    "expect": {"intent": "place_order", "order_id": "150011", "cell": "50", "missing": []}
+  },
+  {
+    "id": "P05",
+    "say": "Ей Тринити, размести заказ 65 65 54 на адрес 11",
+    "expect": {"intent": "place_order", "order_id": "656554", "cell": "11", "missing": []}
+  },
+  {
+    "id": "P06",
+    "say": "Ей Тринити, закинь заказ 16 32 84 на адрес 13",
+    "expect": {"intent": "place_order", "order_id": "163284", "cell": "13", "missing": []}
+  },
+  {
+    "id": "P07",
+    "say": "Ей Тринити, размести заказ 166655 на адрес 14",
+    "expect": {"intent": "place_order", "order_id": "166655", "cell": "14", "missing": []}
+  },
+  {
+    "id": "P08",
+    "say": "Ей Тринити, размести заказ 166655 на адрес 12",
+    "expect": {"intent": "place_order", "order_id": "166655", "cell": null, "missing": ["cell"]}
+  },
+  {
+    "id": "P09",
+    "say": "Ей Тринити, размести на адрес 15",
+    "expect": {"intent": "place_order", "order_id": null, "cell": "15", "missing": ["order_id"]}
+  },
+  {
+    "id": "P09b",
+    "say": "166655",
+    "dialog_after": "P09",
+    "expect": {"intent": "place_order", "order_id": "166655", "cell": "15", "missing": []}
+  },
+  {
+    "id": "S01",
+    "say": "Ей Тринити, распечатай стикер на склад заказ 166655",
+    "expect": {"intent": "print_sticker", "order_id": "166655", "zone": "склад", "missing": []}
+  },
+  {
+    "id": "S02",
+    "say": "Ей Тринити, дай стикер на зальную сборку заказ 163284",
+    "expect": {"intent": "print_sticker", "order_id": "163284", "zone": "магазин", "missing": []}
+  },
+  {
+    "id": "S03",
+    "say": "Ей Тринити, напечатай наклейку на СС заказ 656554",
+    "expect": {"intent": "print_sticker", "order_id": "656554", "zone": "сс", "missing": []}
+  },
+  {
+    "id": "S04",
+    "say": "Ей Тринити, распечатай стикер на заказ 163284",
+    "expect": {"intent": "print_sticker", "order_id": "163284", "zone": null, "missing": ["zone"]}
+  },
+  {
+    "id": "S04b",
+    "say": "склад",
+    "dialog_after": "S04",
+    "expect": {"intent": "print_sticker", "order_id": "163284", "zone": "склад", "missing": []}
+  },
+  {
+    "id": "S05",
+    "say": "Ей Тринити, стикер на магазин заказ 16 32 84",
+    "expect": {"intent": "print_sticker", "order_id": "163284", "zone": "магазин", "missing": []}
+  },
+  {
+    "id": "S06",
+    "say": "Ей Тринити, распечатай стикер на заказ сто шестьдесят три двести восемьдесят четыре",
+    "expect": {"intent": "print_sticker", "order_id": null, "zone": null, "missing": ["order_id", "zone"], "note": "словами десятки/сотни сейчас не склеиваются в 6 цифр"}
+  },
+  {
+    "id": "C01",
+    "say": "Ей Тринити, размести заказ 166655",
+    "expect": {"intent": "place_order", "order_id": "166655", "cell": null, "missing": ["cell"]}
+  },
+  {
+    "id": "C01b",
+    "say": "отмена",
+    "dialog_after": "C01",
+    "expect": {"intent": "unknown", "shutdown": false}
+  },
+  {
+    "id": "C02",
+    "say": "Тринити стоп",
+    "expect": {"intent": "unknown", "shutdown": true}
+  }
+]

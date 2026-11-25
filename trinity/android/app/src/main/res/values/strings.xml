@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Тринити</string>
+    <string name="channel_name">Прослушивание Тринити</string>
+    <string name="server_url">Адрес сервера</string>
+    <string name="save">Сохранить</string>
+    <string name="saved">Адрес сохранён</string>
+    <string name="start">Слушать</string>
+    <string name="stop">Стоп</string>
+    <string name="status_stopped">остановлен</string>
+    <string name="status_preparing">готовлю модель…</string>
+    <string name="status_listening">слушает «Ей, Тринити»</string>
+    <string name="status_followup">жду ответ, говорите</string>
+    <string name="status_recording">пишет команду</string>
+    <string name="hint_wake">Скажите «Ей, Тринити», затем команду. Если чего-то не хватает — отвечайте сразу, без имени. «Тринити, стоп» выключает.</string>
+    <string name="status_uploading">отправляю на сервер</string>
+    <string name="status_error">ошибка</string>
+    <string name="need_mic">Нужен доступ к микрофону</string>
+    <string name="transcript">Распознано</string>
+    <string name="reply">Ответ</string>
+    <string name="log">Журнал</string>
+</resources>
